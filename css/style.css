@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:2vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*footer*/
+.footer {
+    color:black;
+    background-color:#ebcb9c;
+    padding: 2vh;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer #logo {
+    margin: auto;
+    align-content: center;
+    width:50%;
+    height: 30%;
+    justify-content: center;
+}
+/*ending of footer secdtion*/
+.page-border {
+    width:100%;
+    height:100px;
+    background-color: white;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hero section*/
+#hero {
+    background-image: url(../assets/brownies.JPG);
+    background-size:cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:transparent;
+    animation: text_reveal 1s ease forwards;
+    animation-delay:.5s;
+}
+
+#hero h1:nth-child(1) {
+    animation-delay:.5s;
+}
+#hero h1:nth-child(2) {
+    animation-delay:1.5s;
+}
+#hero h1:nth-child(3) {
+    animation:text_reveal_name .5s ease forwards;
+    animation-delay:2.5s;
+    font-weight: 500;
+    
+}
+
+#hero h1 span {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    background-color: chocolate;
+    
+}
+
+#hero h1:nth-child(1) span {
+    animation-delay:0;
+}
+#hero h1:nth-child(2) span {
+    animation-delay:1s;
+}
+#hero h1:nth-child(3) span {
+    animation-delay:2s;
+}
+
+
+/*Menu section*/
+#menu {
+    margin-top: 10vh;
+    width:100%;
+}
+
+#menu .menu {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
+
+#menu .menu-title {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    color: chocolate;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+
+#menu .menu-top {
+    font-size: 1.2rem;
+    color: grey;
+    margin: 2vh;
+}
+
+#menu .menu-bottom {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
+#menu .menu-item {
+    width:100%;
+    flex-basis: 80%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:5px;
+    color:white;
+    margin: 30px 2%;
+    height:300px;  
+    position:relative;
+}
+
+#menu .overlay {
+    display:flex;
+    align-items:flex-start;
+    height: 15vh;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    justify-content: center;
+    z-index:-1;
+}
+
+
+#menu #menu-item-one {
+    background-image: url(../assets/brownies-20x10.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position:relative;
+}
+
+
+#menu .text {
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    position:absolute;
+    justify-content: center;
+    
+}
+
+#menu .text h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+#menu #menu-item-two {
+    background-image: url(../assets/brownies-20x8.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+
+#menu #menu-item-three {
+    background-image: url(../assets/choux-6.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+
+#menu #menu-item-four {
+    background-image: url(../assets/choux-9.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+
+#menu #menu-item-five {
+    background-image: url(../assets/choux-bday.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+
+#menu #menu-item-six {
+    background-image: url(../assets/choux-tower.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+
+#menu #menu-item-seven {
+    background-image: url(../assets/cheese-bread.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: -1;
+}
+/*End of Menu Section*/
+
+/*socmed section*/
+#socmed {
+    background-color:aliceblue;
+}
+
+#socmed .socmed {
+    padding-top:10vh;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+#socmed .socmed-header {
+    font-size: 1.2rem;
+    color: grey;
+    margin: 20px;
+}
+#socmed .menu-title {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    color: chocolate;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+#socmed .socmed-bottom { 
+    display: inline;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    padding-bottom:10vh;
+}
+
+#socmed #whatsapp {
+    display:flex;
+    flex-direction: column;
+    padding: 2vh 2vh;
+    text-align: center;
+    align-content:flex-start;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+}
+
+#socmed .slideshow-socmed {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+#socmed .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+/* Caption text */
+.text_two {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+    background-color: white;
+    border:1px solid #dbdbdb;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 5vh;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*end of socmed section*/
+
+/*keyframe*/
+@keyframes text_reveal_box{
+    50% {
+        width: 100%;
+        left:0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color:white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color:chocolate;
+        font-weight: 500;
+    }
+}
+
+/*ending of keyframe*/
+
+#hero .cta {
+    padding: 1vh 1vh;
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+    font-size: 2rem;
+    margin-top: 5vh;
+    color:white;
+    background-color: transparent;
+    border: 3px solid chocolate;
+    transition: .4 ease;
+    transition-property: color, background-color;
+}
+
+#hero .cta:hover {
+    background-color: chocolate;
+    color:white;
+}
+#hero .hero {
+    margin: 0 auto;
+    padding: 0 10vw;
+    justify-content: flex-start;
+}
