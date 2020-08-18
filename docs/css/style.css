@@ -49,7 +49,7 @@ a {
 #hero {
     background-image: url(../assets/brownies.JPG);
     background-size:cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
     z-index: 1;
     width:100%;
@@ -413,19 +413,19 @@ a {
     50% {
         width: 100%;
         left:0;
-        font-size: 4rem;
+  
     }
     100% {
         width: 0;
         left: 100%;
-        font-size: 4rem;
+
     }
 }
 
 @keyframes text_reveal {
     100% {
         color:white;
-        font-size: 4rem;
+
     }
 }
 
@@ -433,7 +433,7 @@ a {
     100% {
         color:chocolate;
         font-weight: 500;
-        font-size: 4rem;
+
     }
 }
 
