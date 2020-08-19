@@ -138,7 +138,7 @@ a {
 
 
 #menu .menu-top {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: grey;
     margin: 2vh;
 }
@@ -195,11 +195,11 @@ a {
 
     position:absolute;
     justify-content: center;
-    
+    font-size: 1.5rem;
 }
 
 #menu .text h2{
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     margin-bottom: 10px;
 }
 
