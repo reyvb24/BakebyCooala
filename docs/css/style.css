@@ -131,14 +131,14 @@ a {
     font-weight: 500;
     padding: 10px 10px;
     color: chocolate;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     text-transform: uppercase;
     
 }
 
 
 #menu .menu-top {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: grey;
     margin: 2vh;
 }
@@ -199,7 +199,7 @@ a {
 }
 
 #menu .text h2{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin-bottom: 10px;
 }
 
@@ -266,16 +266,16 @@ a {
 }
 
 #socmed .socmed-header {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: grey;
-    margin: 20px;
+    margin: 2vh;
 }
 #socmed .menu-title {
     font-size: 4rem;
     font-weight: 500;
     padding: 10px 10px;
     color: chocolate;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     text-transform: uppercase;
     text-align: center
 }
