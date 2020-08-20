@@ -8,7 +8,6 @@ hamburger.addEventListener("click", ()=> {
 }
 );
 
-document.addEventListener("touchmove", ScrollStart, false);
 document.addEventListener('gesturechange', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
