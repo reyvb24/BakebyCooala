@@ -120,6 +120,7 @@ a {
 	border-radius: 50%;
     border: 0.5vh solid white;
     animation: hamburger-pulse 1s ease infinite;	
+    z-index: -1;
 }
 #header .hamburger .bar {
 	height: .2vh;
