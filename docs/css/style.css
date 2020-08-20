@@ -83,7 +83,7 @@ a {
     color:chocolate;
 }
 
-#header .nav-list ul:active {
+#header .nav-list ul.active {
     left:70%;
 }
 
